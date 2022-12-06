@@ -1,0 +1,15 @@
+<h1>Cadastre-se</h1>
+
+<form action="/depend/save" method="post">
+    <input type="text" id=""name="nome" placeholder="Digite seu nome completo" />
+    <br>
+
+    <br>
+    <input type="text" id="" name="cpf" placeholder="Digite seu cpf" />
+    <br>
+    <input type="date" id=""  name="dataNascimento"  />
+    <br>
+    <input type="hidden" name="socioid" value="{{ socio.id }}">
+    <br>
+    <input type="submit" value="Cadastrar dependente">
+</form>
