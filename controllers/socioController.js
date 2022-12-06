@@ -15,6 +15,8 @@ module.exports = class socioController {
            endereco : req.body.endereco,
            cidade : req.body.cidade,
            uf : req.body.uf,
+           //tipo : req.body.tipo,
+           //status : req.body.status
           
         };
         await socio.create(socioNovo);

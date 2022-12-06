@@ -10,8 +10,8 @@ const Socio = db.define('usuario', {
     endereco: {type:DataTypes.STRING(200), allowNull: false},
     cidade: {type:DataTypes.STRING, allowNull: false},
     uf: {type:DataTypes.STRING, allowNull: false},
-    tipo: {type:DataTypes.ENUM('socio', ' admin'), allowNull: true},
-    status: {type:DataTypes.ENUM('aprovado', 'pendente', 'reprovado'), allowNull: true},
+    tipo: {type:DataTypes.ENUM('socio', ' admin'), defaultValue: 'socio', allowNull: true},
+    status: {type:DataTypes.ENUM('aprovado', 'pendente', 'reprovado'), defaultValue: 'pendente', allowNull: true},
 
 });
 
